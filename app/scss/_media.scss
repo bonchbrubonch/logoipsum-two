@@ -1,7 +1,7 @@
 @media (min-width: 1450px) {
 	.header__nav ul {
 		border-radius: 50px;
-		background: rgba(#fff, .8);
+		background: #c1d2f1;
 	}
 }
 
@@ -48,16 +48,20 @@
 	.intro__box {
 		margin: 0;
 	}
-
+	
 	.excellence__list li {
-		width: calc(33.33333% - 25px);
+		width: calc(33.33333% - 30px);
 	}
+	.g-steps__list {
 
+		margin: 0 0 0 -30px;
+	}
 	.g-steps__list li {
-		width: calc(50% - 75px);
+		width: calc(50% - 30px);
+		margin: 0 0 55px 30px;
 	}
 
-	.g-steps__list li:nth-child(even) {
+	.g-steps__list li{
 		&::after {
 			display: none;
 		}
@@ -174,8 +178,9 @@
 		margin: 0 0 0 20px;
 		display: block;
 		width: 12px;
-		height: 2px;
-		background-color: #2B2A29;
+		height: 1px;
+		border-radius: 50%;
+		background-color: #00173F;
 		transition: linear .2s;
 		border-radius: 10px;
 	}
@@ -187,8 +192,9 @@
 		left: 50%;
 		transform: translateX(-50%);
 		width: 18px;
-		height: 2px;
-		background-color: #2B2A29;
+		height: 1px;
+		border-radius: 50%;
+		background-color: #00173F;
 		transition: linear .2s;
 		border-radius: 10px;
 	}
@@ -196,12 +202,13 @@
 	.header__menu-btn::after {
 		content: "";
 		position: absolute;
-		bottom: 8px;
+		bottom: 9px;
 		left: 50%;
 		transform: translateX(-50%);
 		width: 18px;
-		height: 2px;
-		background-color: #2B2A29;
+		height: 1px;
+		border-radius: 50%;
+		background-color: #00173F;
 		transition: linear .2s;
 		border-radius: 10px;
 	}
@@ -213,12 +220,12 @@
 	.header__menu-btn.active {
 		background-color: rgba(13, 110, 253, 0.2);
 		border-radius: 50%;
-		width: 22px;
-		height: 22px;
+		width: 32px;
+		height: 32px;
 	}
 
 	.header__menu-btn.active::before {
-		top: 10px;
+		top: 16px;
 		transform: translateX(-50%) rotate(-45deg);
 		background-color: rgb(0, 23, 63);
 		width: 50%;
@@ -230,7 +237,7 @@
 	}
 
 	.header__menu-btn.active::after {
-		bottom: 10px;
+		bottom: 15px;
 		transform: translateX(-50%) rotate(45deg);
 		background-color: rgb(0, 23, 63);
 		width: 50%;
@@ -355,8 +362,8 @@
 	}
 
 	.g-steps__list li {
-		width: calc(100% - 75px);
-		margin: 0 0 55px 85px;
+		width: calc(100% - 30px);
+		margin: 0 0 55px 30px;
 		border-radius: 24px;
 	}
 

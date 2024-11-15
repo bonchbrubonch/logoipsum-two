@@ -68,7 +68,7 @@ var swiper = new Swiper(".partners__slider", {
 	grid: {
 		rows: 2,
 	},
-	spaceBetween: 30,
+	spaceBetween: 15,
 	navigation: {
 		nextEl: ".swiper-button-next",
 		prevEl: ".swiper-button-prev",
@@ -153,3 +153,6 @@ listItems.forEach(function (item) {
 		dropdown.style.display = 'none';
 	});
 });
+
+
+//
