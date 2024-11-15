@@ -1,0 +1,200 @@
+html,
+body {
+	height: 100%;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+input,
+textarea {
+	outline: none;
+	font-size: 16px !important;
+
+	&::placeholder {
+		font-size: 16px !important;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-size: inherit;
+}
+
+body {
+	font-family: 'Gilroy';
+	line-height: 130%;
+	font-size: 16px;
+	font-weight: 400;
+	color: rgb(0, 26, 72);
+}
+body.lock{
+	overflow: hidden;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
+.container {
+	max-width: 1250px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.btn {
+	padding: 5px 5px 5px 20px;
+	display: flex;
+	align-items: center;
+	width: fit-content;
+	color: rgb(255, 255, 255);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 22px;
+	border-radius: 50px;
+	background: rgb(13, 110, 253);
+	transition: linear .2s;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	img,
+	svg {
+		width: 47px;
+		height: 47px;
+		object-fit: contain;
+		margin: 0 0 0 10px;
+		transition: linear .2s;
+	}
+
+	&:hover {
+		img {
+			transform: rotate(45deg);
+		}
+
+	}
+}
+
+//
+.title {
+	color: rgb(0, 26, 72);
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 120%;
+
+}
+//
+.soc {
+	display: flex;
+
+	li {
+		margin: 0 10px 0 0 !important;
+		transition: linear .2s;
+
+		&:hover {
+			opacity: .7;
+		}
+	}
+
+}
+
+//
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+	color: rgb(0, 6, 55);
+	font-family: "Manrope", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 130%;
+	text-transform: uppercase;
+	background-color: transparent;
+	top: 40px;
+	visibility: visible !important;
+}
+
+.irs--flat .irs-line,
+.irs--flat .irs-bar {
+	height: 8px;
+}
+
+.irs--flat .irs-bar {
+	background: rgba(13, 110, 253, 0.76);
+}
+
+.irs--flat .irs-handle {
+	width: 20px;
+	height: 20px;
+	border: 4px solid rgba(13, 110, 253, 0.76);
+	border-radius: 50%;
+	background-color: #fff;
+	top: 19px;
+	cursor: pointer;
+}
+
+.irs--flat .irs-handle>i:first-child {
+	display: none;
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single {
+	color: white;
+	font-family: "Manrope";
+	font-size: 18px;
+	text-shadow: none;
+	padding: 15px 10px;
+	background: rgba(13, 110, 253, 0.76);
+	border-radius: 8px;
+	box-shadow: 0px 44px 44px -7px rgba(0, 0, 0, 0.08);
+	top: -50px;
+}
+
+.irs--flat .irs-from:before,
+.irs--flat .irs-to:before,
+.irs--flat .irs-single:before {
+	position: absolute;
+	display: block;
+	content: "";
+	bottom: -12px;
+	left: 50%;
+	width: 0;
+	height: 0;
+	margin-left: -6px;
+	overflow: hidden;
+	border: 6px solid transparent;
+	border-top-color: rgba(13, 110, 253, 0.76);
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+    integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header"></header>
+
+  <div class="wrapper">
+    <main class="main">
+      <a href="#" class="btn" data-fancybox="" data-src="#modal-1">modal 1</a>
+      <a href="#" class="btn" data-fancybox="" data-src="#modal-2">modal 2</a>
+      <a href="#" class="btn" data-fancybox="" data-src="#modal-3">modal 3</a>
+      <a href="#" class="btn" data-fancybox="" data-src="#modal-4">modal 4</a>
+
+    </main>
+
+  </div>
+
+  <div class="modal" id="modal-1">
+    <form class="form">
+      <h6>Obțineți acum un împrumut online</h6>
+      <div class="form__inner">
+        <p>Completați numărul dvs. de telefon de mai jos pentru a începe procesul de împrumut</p>
+        <div class="form__group error">
+          <label for="Nume">Nume</label>
+          <input id="Nume" name="Nume" required="" type="name" placeholder="Introduceți un nume">
+          <span class="error-text">Error</span>
+        </div>
+        <div class="form__group">
+          <label for="Telefon">Telefon</label>
+          <input id="Telefon" name="Telefon" required="" type="name" placeholder="+40 000-000-000">
+          <span class="error-text">Error</span>
+        </div>
+        <button class="btn">Să începem <img src="images/icons/arrow-btn.svg" alt="icon"></button>
+      </div>
+    </form>
+  </div>
+  <div class="modal" id="modal-2">
+    <form class="form">
+      <h6>Introduceți adresa</h6>
+      <div class="form__inner">
+        <p> Introduceți numele localității, apoi al regiunii</p>
+        <div class="form__group autosearch">
+          <label for="Soluționare"> Soluționare</label>
+          <input id="autosearch" name=" Soluționare" required="" type="name" autocomplete="off"
+            placeholder=" Decontare">
+          <span class="error-text">Error</span>
+          <div class="autosearch__drop">
+            <ul>
+              <li>lorem 1</li>
+              <li>lorem 2</li>
+              <li>lorem 3</li>
+              <li>lorem 4</li>
+              <li>lorem 5</li>
+              <li>lorem 6</li>
+              <li>lorem 7</li>
+              <li>lorem 8</li>
+              <li>lorem 9</li>
+              <li>lorem 10</li>
+            </ul>
+          </div>
+        </div>
+        <div class="form__group">
+          <label for="Telefon">Regiunea</label>
+          <div class="select-wrap">
+            <select>
+              <option>Neselectat 1</option>
+              <option>Neselectat 2</option>
+              <option>Neselectat 3</option>
+              <option>Neselectat 4</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn">Să începem <img src="images/icons/arrow-btn.svg" alt="icon"></button>
+      </div>
+    </form>
+  </div>
+  <div class="modal" id="modal-3">
+    <form class="form">
+      <h6>Introduceți adresa dvs. de e-mail</h6>
+      <div class="form__inner">
+        <p>Vă rugăm să completați câmpul cu adresa dvs. de email</p>
+        <div class="form__group error">
+          <label for=" Soluționare"> E mail</label>
+          <input id=" mail" name=" mail" required="" type="mail" placeholder="E mail">
+          <span class="error-text">Error</span>
+        </div>
+        <button class="btn">Să începem <img src="images/icons/arrow-btn.svg" alt="icon"></button>
+      </div>
+    </form>
+  </div>
+  <div class="modal" id="modal-4">
+    <form class="form">
+      <h6>Introduceți codul</h6>
+      <div class="form__inner">
+        <p>Introduceți codul din SMS-ul pe care l-am trimis la numărul de telefon specificat</p>
+        <div class="form__group-code">
+          <input type="text" maxlength="1" placeholder="Х">
+          <input type="text" maxlength="1" placeholder="Х">
+          <input type="text" maxlength="1" placeholder="Х">
+          <input type="text" maxlength="1" placeholder="Х">
+        </div>
+        <button class="btn">Să începem <img src="images/icons/arrow-btn.svg" alt="icon"></button>
+      </div>
+    </form>
+  </div>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+    integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+    integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

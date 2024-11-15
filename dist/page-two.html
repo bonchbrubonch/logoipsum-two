@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+    integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#" class="header__logo">
+          <img src="images/content/logo.png" alt="logo">
+        </a>
+        <nav class="header__nav">
+          <ul>
+            <li>
+              <a href="#excellence">Cum funcționează</a>
+            </li>
+            <li>
+              <a href="#edge">Beneficii</a>
+            </li>
+            <li>
+              <a href="#faq">FAQs</a>
+            </li>
+          </ul>
+          <ul class="soc">
+            <li>
+              <a href="#" target="_blank">
+                <img src="images/icons/soc-1.1.svg" alt="telegram">
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="images/icons/soc-2.1.svg" alt="skype">
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__menu-btn">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="wrapper">
+    <main class="main">
+      <div class="page">
+        <div class="title-wrap">
+          <h3 class="title">Cele mai bune oferte ale noastre</h3>
+        </div>
+          <div class="container">
+          <ul class="cart-list">
+            <li>
+              <div class="cart-list__img">
+                <img src="images/content/logo-3.png" alt="icon">
+              </div>
+              <h6>Titlu într-unul sau două rânduri</h6>
+              <div class="cart-list__box">
+                <div class="cart-list__col">
+                  <span>second_credit</span>
+                  <strong>3.000</strong>
+                </div>
+                <div class="cart-list__col">
+                  <span>Timp de aprobare</span>
+                  <strong>de la 30 min</strong>
+                </div>
+              </div>
+              <a href="#" class="btn">Să începem <img src="images/icons/arrow-btn.svg" alt=""></a>
+            </li>
+            <li>
+              <div class="cart-list__img">
+                <img src="data:image/png;base64,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" alt="icon">
+              </div>
+              <h6>Titlu într-unul sau două rânduri</h6>
+              <div class="cart-list__box">
+                <div class="cart-list__col">
+                  <span>second_credit</span>
+                  <strong>3.000</strong>
+                </div>
+                <div class="cart-list__col">
+                  <span>Timp de aprobare</span>
+                  <strong>de la 30 min</strong>
+                </div>
+              </div>
+              <a href="#" class="btn">Să începem <img src="images/icons/arrow-btn.svg" alt=""></a>
+            </li>
+            <li>
+              <div class="cart-list__img">
+                <img src="images/content/logo-3.png" alt="icon">
+              </div>
+              <h6>Titlu într-unul sau două rânduri</h6>
+              <div class="cart-list__box">
+                <div class="cart-list__col">
+                  <span>second_credit</span>
+                  <strong>3.000</strong>
+                </div>
+                <div class="cart-list__col">
+                  <span>Timp de aprobare</span>
+                  <strong>de la 30 min</strong>
+                </div>
+              </div>
+              <a href="#" class="btn">Să începem <img src="images/icons/arrow-btn.svg" alt=""></a>
+            </li>
+            <li>
+              <div class="cart-list__img">
+                <img src="images/content/logo-3.png" alt="icon">
+              </div>
+              <h6>Titlu într-unul sau două rânduri</h6>
+              <div class="cart-list__box">
+                <div class="cart-list__col">
+                  <span>second_credit</span>
+                  <strong>3.000</strong>
+                </div>
+                <div class="cart-list__col">
+                  <span>Timp de aprobare</span>
+                  <strong>de la 30 min</strong>
+                </div>
+              </div>
+              <a href="#" class="btn">Să începem <img src="images/icons/arrow-btn.svg" alt=""></a>
+            </li>
+            <li>
+              <div class="cart-list__img">
+                <img src="images/content/logo-3.png" alt="icon">
+              </div>
+              <h6>Titlu într-unul sau două rânduri</h6>
+              <div class="cart-list__box">
+                <div class="cart-list__col">
+                  <span>second_credit</span>
+                  <strong>3.000</strong>
+                </div>
+                <div class="cart-list__col">
+                  <span>Timp de aprobare</span>
+                  <strong>de la 30 min</strong>
+                </div>
+              </div>
+              <a href="#" class="btn">Să începem <img src="images/icons/arrow-btn.svg" alt=""></a>
+            </li>
+            <li>
+              <div class="cart-list__img">
+                <img src="images/content/logo-3.png" alt="icon">
+              </div>
+              <h6>Titlu într-unul sau două rânduri</h6>
+              <div class="cart-list__box">
+                <div class="cart-list__col">
+                  <span>second_credit</span>
+                  <strong>3.000</strong>
+                </div>
+                <div class="cart-list__col">
+                  <span>Timp de aprobare</span>
+                  <strong>de la 30 min</strong>
+                </div>
+              </div>
+              <a href="#" class="btn">Să începem <img src="images/icons/arrow-btn.svg" alt=""></a>
+            </li>
+            <li>
+              <div class="cart-list__img">
+                <img src="images/content/logo-3.png" alt="icon">
+              </div>
+              <h6>Titlu într-unul sau două rânduri</h6>
+              <div class="cart-list__box">
+                <div class="cart-list__col">
+                  <span>second_credit</span>
+                  <strong>3.000</strong>
+                </div>
+                <div class="cart-list__col">
+                  <span>Timp de aprobare</span>
+                  <strong>de la 30 min</strong>
+                </div>
+              </div>
+              <a href="#" class="btn">Să începem <img src="images/icons/arrow-btn.svg" alt=""></a>
+            </li>
+          </ul>
+        </div>
+
+
+
+      </div>
+
+    </main>
+    <footer class="footer footer--main">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__col">
+            <a class="footer__logo" href="#">
+              <img src="images/content/logo-2.png" alt="logo">
+            </a>
+            <p>Lorem ipsum dolor sit amet consectetur. Arcu scelerisque arcu est aenean dignissim porttitor feugiat.
+              Eget integer quam pharetra quis habitant id nulla cursus magna.</p>
+          </div>
+          <div class="footer__col">
+            <div class="footer__title">
+              Informații
+            </div>
+            <ul>
+              <li>
+                <a href="#">Cum funcționează</a>
+              </li>
+              <li>
+                <a href="#">Beneficii</a>
+              </li>
+              <li>
+                <a href="#">FAQs</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <div class="footer__title">
+              Legal
+            </div>
+            <ul>
+              <li>
+                <a href="#">Terms of use</a>
+              </li>
+              <li>
+                <a href="#">Privacy policy</a>
+              </li>
+              <li>
+                <a href="#">Cookie policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <div class="footer__title">
+              Contactați-ne
+            </div>
+            <p>Bułgaria, Sofia 1220 district Nadezhda, j.k. "Lev Tolstoy" bl. 57</p>
+            <ul class="soc">
+              <li>
+                <a href="#" target="_blank">
+                  <img src="images/icons/soc-1.svg" alt="telegram">
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <img src="images/icons/soc-2.svg" alt="skype">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          © 2024. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+    integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+    integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
