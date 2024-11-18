@@ -698,6 +698,51 @@
   }
 }
 
+.modal-blur {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+    background: rgba(232, 239, 250, 0.03);
+    z-index: 999;
+  }
+
+  .modal-preloader {
+    display: block !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 9999;
+  }
+
+  @keyframes spin {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+}
+
 .modal {
   display: none;
   padding: 0;
@@ -708,6 +753,10 @@
   background-position: center;
   max-width: 565px;
   width: 100%;
+
+  .modal-preloader {
+    display: none;
+  }
 
   h6 {
     padding: 60px 30px 25px 30px;
@@ -764,7 +813,8 @@
     font-size: 14px;
     margin: 0 0 5px 0;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
       color: #0d6efd;
     }
   }
@@ -818,7 +868,7 @@
     position: relative;
     color: rgb(0, 11, 30) !important;
     background-color: #E8EFFA;
-   
+
   }
 
   .select-wrap {
